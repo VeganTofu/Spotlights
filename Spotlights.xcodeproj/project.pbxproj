@@ -14,6 +14,10 @@
 		3A59076D1D5092BE00F9B4C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A59076B1D5092BE00F9B4C0 /* LaunchScreen.storyboard */; };
 		3A5907781D5092BE00F9B4C0 /* SpotlightsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5907771D5092BE00F9B4C0 /* SpotlightsTests.swift */; };
 		3A5907831D5092BE00F9B4C0 /* SpotlightsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5907821D5092BE00F9B4C0 /* SpotlightsUITests.swift */; };
+		3A5907941D50939A00F9B4C0 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5907931D50939A00F9B4C0 /* DetailViewController.swift */; };
+		3A5907971D50951900F9B4C0 /* LightTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5907961D50951900F9B4C0 /* LightTableViewCell.swift */; };
+		3A5907991D50952C00F9B4C0 /* SpotlightService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5907981D50952C00F9B4C0 /* SpotlightService.swift */; };
+		3A59079B1D50A04600F9B4C0 /* Light.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A59079A1D50A04600F9B4C0 /* Light.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		3A59077E1D5092BE00F9B4C0 /* SpotlightsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpotlightsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A5907821D5092BE00F9B4C0 /* SpotlightsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotlightsUITests.swift; sourceTree = "<group>"; };
 		3A5907841D5092BE00F9B4C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A5907931D50939A00F9B4C0 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		3A5907961D50951900F9B4C0 /* LightTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LightTableViewCell.swift; path = Cells/LightTableViewCell.swift; sourceTree = "<group>"; };
+		3A5907981D50952C00F9B4C0 /* SpotlightService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotlightService.swift; sourceTree = "<group>"; };
+		3A59079A1D50A04600F9B4C0 /* Light.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Light.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +105,12 @@
 		3A5907611D5092BE00F9B4C0 /* Spotlights */ = {
 			isa = PBXGroup;
 			children = (
+				3A5907981D50952C00F9B4C0 /* SpotlightService.swift */,
+				3A5907951D50950700F9B4C0 /* Cells */,
+				3A5907901D50935A00F9B4C0 /* Models */,
 				3A5907621D5092BE00F9B4C0 /* AppDelegate.swift */,
 				3A5907641D5092BE00F9B4C0 /* ViewController.swift */,
+				3A5907931D50939A00F9B4C0 /* DetailViewController.swift */,
 				3A5907661D5092BE00F9B4C0 /* Main.storyboard */,
 				3A5907691D5092BE00F9B4C0 /* Assets.xcassets */,
 				3A59076B1D5092BE00F9B4C0 /* LaunchScreen.storyboard */,
@@ -123,6 +135,22 @@
 				3A5907841D5092BE00F9B4C0 /* Info.plist */,
 			);
 			path = SpotlightsUITests;
+			sourceTree = "<group>";
+		};
+		3A5907901D50935A00F9B4C0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3A59079A1D50A04600F9B4C0 /* Light.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		3A5907951D50950700F9B4C0 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				3A5907961D50951900F9B4C0 /* LightTableViewCell.swift */,
+			);
+			name = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +284,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A59079B1D50A04600F9B4C0 /* Light.swift in Sources */,
+				3A5907991D50952C00F9B4C0 /* SpotlightService.swift in Sources */,
+				3A5907971D50951900F9B4C0 /* LightTableViewCell.swift in Sources */,
 				3A5907651D5092BE00F9B4C0 /* ViewController.swift in Sources */,
 				3A5907631D5092BE00F9B4C0 /* AppDelegate.swift in Sources */,
+				3A5907941D50939A00F9B4C0 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
